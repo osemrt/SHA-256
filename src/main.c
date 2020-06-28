@@ -2,8 +2,6 @@
 
 int main(int argc, char const *argv[])
 {
-
-    printf("Hello world...\n");
-
+    showMenu();
     return 0;
 }
