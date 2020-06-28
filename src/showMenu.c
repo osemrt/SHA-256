@@ -19,7 +19,7 @@ void showMenu() {
 		case 1:
 			/* Test Mode */
 			clearScreen();
-			
+			testMode();
 
 			break;
 		case 2:
