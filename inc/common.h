@@ -14,3 +14,14 @@
 #define EP1(x) (ROTRIGHT(x,6) ^ ROTRIGHT(x,11) ^ ROTRIGHT(x,25))
 #define SIG0(x) (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3))
 #define SIG1(x) (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10))
+
+
+typedef unsigned char BYTE; // 8-bit byte
+typedef unsigned int WORD;  // 32-bit word
+
+typedef struct {
+	WORD state[8];
+	BYTE data[64];
+	WORD dataLength;
+	unsigned long long bitLength;
+}SHA256;
