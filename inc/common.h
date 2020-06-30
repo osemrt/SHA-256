@@ -1,6 +1,9 @@
 #pragma once
 
 #include <stdio.h>
+#include <string.h>
+#include <limits.h>
+#include<time.h>
 
 #define TRUE 1
 #define FALSE 0
@@ -15,6 +18,8 @@
 #define SIG0(x) (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3))
 #define SIG1(x) (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10))
 
+#define MAX_INPUT_COUNT 256
+#define MAX_LINE 512
 
 typedef unsigned char BYTE; // 8-bit byte
 typedef unsigned int WORD;  // 32-bit word

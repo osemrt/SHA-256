@@ -25,6 +25,7 @@ void showMenu() {
 		case 2:
 			/* Performance Mode */
 			clearScreen();
+			performanceMode();
 			
 			break;
 		case 3:
